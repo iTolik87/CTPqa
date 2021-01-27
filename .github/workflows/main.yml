@@ -77,7 +77,7 @@ jobs:
           # CTP Password
           ctpPassword: 'admin'
           # CTP Test Execution Job Name
-          ctpJob: 'CalculatorJob'
+          ctpJob: 'Echo'
           # Abort the job after timeout exceeded
           abortOnTimeout: # optional
           # Timeout value in minutes
