@@ -29,73 +29,73 @@ jobs:
 
       # Runs a set of commands using the runners shell
       - name: Deploy Environment
-  # You may pin to the exact commit or the version.
-  # uses: parasoft/deploy-environment-action@ea4c180723d6eb7858e41fa89c2af734ddd8c8b5
-  uses: parasoft/deploy-environment-action@1.0.0
-  with:
-    # CTP URL
-    ctpUrl: 'http://10.1.40.81:8080/em'
-    # CTP Username
-    ctpUsername: 'admin'
-    # CTP Password
-    ctpPassword: 'admin'
-    # Name of the system
-    system: 'ParaBank'
-    # Name of the environment
-    environment: 'Golden'
-    # Name of the environment instance to provision
-    instance: 'Negative'
-    # Fail action and abort on provisioning failure
-    abortOnFailure: # optional
-    # Virtual assets in the environment will be replicated on another server
-    copyToVirtualize: # optional
-    # The environment assets will be copied to a Virtualize server matching this name
-    virtServerName: # optional
-    # The name for the replicated environment can be used to later destroy the environment
-    newEnvironmentName: # optional
-    # Duplicate associated data repositories before provisioning
-    duplicateDataRepo: # optional
-    # Where to duplicate data repository
-    duplicateType: # optional
-    # The host of the data repository server
-    repoHost: # optional
-    # The port of the data repository server
-    repoPort: # optional
-    # The username of the data repository server
-    repoUsername: # optional
-    # The password of the data repository server
-    repoPassword: # optional
+        # You may pin to the exact commit or the version.
+        # uses: parasoft/deploy-environment-action@ea4c180723d6eb7858e41fa89c2af734ddd8c8b5
+        uses: parasoft/deploy-environment-action@1.0.0
+        with:
+          # CTP URL
+          ctpUrl: 'http://10.1.40.81:8080/em'
+          # CTP Username
+          ctpUsername: 'admin'
+          # CTP Password
+          ctpPassword: 'admin'
+          # Name of the system
+          system: 'ParaBank'
+          # Name of the environment
+          environment: 'Golden'
+          # Name of the environment instance to provision
+          instance: 'Negative'
+          # Fail action and abort on provisioning failure
+          abortOnFailure: # optional
+          # Virtual assets in the environment will be replicated on another server
+          copyToVirtualize: # optional
+          # The environment assets will be copied to a Virtualize server matching this name
+          virtServerName: # optional
+          # The name for the replicated environment can be used to later destroy the environment
+          newEnvironmentName: # optional
+          # Duplicate associated data repositories before provisioning
+          duplicateDataRepo: # optional
+          # Where to duplicate data repository
+          duplicateType: # optional
+          # The host of the data repository server
+          repoHost: # optional
+          # The port of the data repository server
+          repoPort: # optional
+          # The username of the data repository server
+          repoUsername: # optional
+          # The password of the data repository server
+          repoPassword: # optional
       - name: Execute Job
-  # You may pin to the exact commit or the version.
-  # uses: parasoft/execute-job-action@4ff52dfe0b1abb285d1e94418d9b6015bbb5f6bc
-  uses: parasoft/execute-job-action@1.0.0
-  with:
-    # CTP URL
-    ctpUrl: 'http://10.1.40.81:8080/em'
-    # CTP Username
-    ctpUsername: 'admin'
-    # CTP Password
-    ctpPassword: 'admin'
-    # CTP Test Execution Job Name
-    ctpJob: 'CalculatorJob'
-    # Abort the job after timeout exceeded
-    abortOnTimeout: # optional
-    # Timeout value in minutes
-    timeoutInMinutes: # optional
-    # Publish test execution results to DTP
-    publishReport: # 'true'
-    # DTP URL
-    dtpUrl: # 'http://34.219.97.185:8080'
-    # DTP Username
-    dtpUsername: # 'demo'
-    # DTP Password
-    dtpPassword: # 'demo-user'
-    # DTP Project Name
-    dtpProject: # optional
-    # Build ID to send to DTP
-    buildId: # optional
-    # Session Tag to send to DTP
-    sessionTag: # 'GitHubTest'
-    # Append the test variable set environment name to the session tag
-    appendEnvironment: # optional
+        # You may pin to the exact commit or the version.
+        # uses: parasoft/execute-job-action@4ff52dfe0b1abb285d1e94418d9b6015bbb5f6bc
+        uses: parasoft/execute-job-action@1.0.0
+        with:
+          # CTP URL
+          ctpUrl: 'http://10.1.40.81:8080/em'
+          # CTP Username
+          ctpUsername: 'admin'
+          # CTP Password
+          ctpPassword: 'admin'
+          # CTP Test Execution Job Name
+          ctpJob: 'CalculatorJob'
+          # Abort the job after timeout exceeded
+          abortOnTimeout: # optional
+          # Timeout value in minutes
+          timeoutInMinutes: # optional
+          # Publish test execution results to DTP
+          publishReport: # 'true'
+          # DTP URL
+          dtpUrl: # 'http://34.219.97.185:8080'
+          # DTP Username
+          dtpUsername: # 'demo'
+          # DTP Password
+          dtpPassword: # 'demo-user'
+          # DTP Project Name
+          dtpProject: # optional
+          # Build ID to send to DTP
+          buildId: # optional
+          # Session Tag to send to DTP
+          sessionTag: # 'GitHubTest'
+          # Append the test variable set environment name to the session tag
+          appendEnvironment: # optional
     
