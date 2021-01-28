@@ -99,10 +99,10 @@ jobs:
           # Append the test variable set environment name to the session tag
           appendEnvironment: # optional
       - name: Destroy Environment
-      # You may pin to the exact commit or the version.
-      # uses: parasoft/destroy-environment-action@d24cf544b41f8454976fb79aadf3c78352e45c4f
-      uses: parasoft/destroy-environment-action@1.0.0
-      with:
+        # You may pin to the exact commit or the version.
+        # uses: parasoft/destroy-environment-action@d24cf544b41f8454976fb79aadf3c78352e45c4f
+        uses: parasoft/destroy-environment-action@1.0.0
+        with:
         # CTP URL
         ctpUrl: 'http://13.91.2.202/em'
         # CTP Username
