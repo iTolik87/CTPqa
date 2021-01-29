@@ -98,22 +98,7 @@ jobs:
           sessionTag: # 'GitHubTest'
           # Append the test variable set environment name to the session tag
           appendEnvironment: # optional
-      - name: Destroy Environment
-        # You may pin to the exact commit or the version.
-        # uses: parasoft/destroy-environment-action@d24cf544b41f8454976fb79aadf3c78352e45c4f
-        uses: parasoft/destroy-environment-action@1.0.0
-        with:
-          # CTP URL
-          ctpUrl: 'http://40.83.216.71/em'
-          # CTP Username
-          ctpUsername: 'admin'
-          # CTP Password
-          ctpPassword: 'admin'
-          # Name of the system
-          system: 'ParaBank'
-          # Name of the environment
-          environment: 'Golden2'
-          - name: Disconnect Action
+      - name: Disconnect Action
         # You may pin to the exact commit or the version.
         # uses: parasoft/disconnect-server-action@c07b9be852bd7309ab6b840d77e6bd4f079cb082
         uses: parasoft/disconnect-server-action@1.0.0
@@ -125,6 +110,6 @@ jobs:
           # CTP Password
           ctpPassword: 'admin'
           # Used to specify server by host or name
-          serverMatch: 'http://40.83.216.71/em'
+          serverMatch: 'host'
           # Host or name of the server
-          server: AzureVirtServer
+          server: 'http://40.83.216.71/em'
