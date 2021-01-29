@@ -98,4 +98,4 @@ jobs:
           # Session Tag to send to DTP
           sessionTag: 'GitHubTest'
           # Append the test variable set environment name to the session tag
-          appendEnvironment: 
+          appendEnvironment: 'Golden'
