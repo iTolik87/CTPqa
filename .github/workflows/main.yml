@@ -46,7 +46,7 @@ jobs:
           # Name of the environment instance to provision
           instance: 'Negative'
           # Fail action and abort on provisioning failure
-          abortOnFailure: # 'true'
+          abortOnFailure: # 'false'
           # Virtual assets in the environment will be replicated on another server
           copyToVirtualize: # optional
           # The environment assets will be copied to a Virtualize server matching this name
@@ -112,4 +112,4 @@ jobs:
           # Used to specify server by host or name
           serverMatch: 'host'
           # Host or name of the server
-          server: 'http://40.83.216.71/em'
+          server: 'ctpsprinttest2.internal.cloudapp.net'
