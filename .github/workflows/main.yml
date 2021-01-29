@@ -46,7 +46,7 @@ jobs:
           # Name of the environment instance to provision
           instance: 'Negative'
           # Fail action and abort on provisioning failure
-          abortOnFailure: # 'false'
+          abortOnFailure: 'false'
           
       - name: Execute Job
         # You may pin to the exact commit or the version.
@@ -62,16 +62,16 @@ jobs:
           # CTP Test Execution Job Name
           ctpJob: 'StatusTest'
           # Publish test execution results to DTP
-          publishReport: # 'true'
+          publishReport: 'true'
           # DTP URL
-          dtpUrl: # 'http://34.219.97.185:8080/grs'
+          dtpUrl: 'http://34.219.97.185:8080/grs'
           # DTP Username
-          dtpUsername: # 'demo'
+          dtpUsername: 'demo'
           # DTP Password
-          dtpPassword: # 'demo-user'
+          dtpPassword: 'demo-user'
           # DTP Project Name
-          dtpProject: # 'All Projects'
+          dtpProject: 'All Projects'
           # Build ID to send to DTP
-          buildId: # '1'
+          buildId: '1'
           # Session Tag to send to DTP
-          sessionTag: # 'GitHubTest'
+          sessionTag: 'GitHubTest'
