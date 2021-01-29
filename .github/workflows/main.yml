@@ -48,7 +48,7 @@ jobs:
           # Fail action and abort on provisioning failure
           abortOnFailure: 'false'
           # Virtual assets in the environment will be replicated on another server
-          copyToVirtualize: 'AzureVirtServer'
+          copyToVirtualize: 'LoanProcessor-DataDriven'
           # The environment assets will be copied to a Virtualize server matching this name
           virtServerName: 'AzureVirtServer'
           # The name for the replicated environment can be used to later destroy the environment
