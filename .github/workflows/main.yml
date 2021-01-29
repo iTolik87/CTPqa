@@ -47,6 +47,24 @@ jobs:
           instance: 'Negative'
           # Fail action and abort on provisioning failure
           abortOnFailure: 'false'
+          # Virtual assets in the environment will be replicated on another server
+          # copyToVirtualize:
+          # The environment assets will be copied to a Virtualize server matching this name
+          virtServerName: 'AzureVirtServer'
+          # The name for the replicated environment can be used to later destroy the environment
+          # newEnvironmentName:
+          # Duplicate associated data repositories before provisioning
+          duplicateDataRepo: 'Golden'
+          # Where to duplicate data repository
+          duplicateType: 'duplicate'
+          # The host of the data repository server
+          repoHost: 'localhost'
+          # The port of the data repository server
+          repoPort: '2424'
+          # The username of the data repository server
+          repoUsername: 'admin'
+          # The password of the data repository server
+          repoPassword: 'admin'
           
       - name: Execute Job
         # You may pin to the exact commit or the version.
@@ -61,6 +79,10 @@ jobs:
           ctpPassword: 'admin'
           # CTP Test Execution Job Name
           ctpJob: 'StatusTest'
+          # Abort the job after timeout exceeded
+          abortOnTimeout: optional
+          # Timeout value in minutes
+          timeoutInMinutes: optional
           # Publish test execution results to DTP
           publishReport: 'true'
           # DTP URL
@@ -75,3 +97,5 @@ jobs:
           buildId: '1'
           # Session Tag to send to DTP
           sessionTag: 'GitHubTest'
+          # Append the test variable set environment name to the session tag
+          appendEnvironment: 
