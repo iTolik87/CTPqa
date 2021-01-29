@@ -47,24 +47,7 @@ jobs:
           instance: 'Negative'
           # Fail action and abort on provisioning failure
           abortOnFailure: # 'false'
-          # Virtual assets in the environment will be replicated on another server
-          copyToVirtualize: # optional
-          # The environment assets will be copied to a Virtualize server matching this name
-          virtServerName: # optional
-          # The name for the replicated environment can be used to later destroy the environment
-          newEnvironmentName: # optional
-          # Duplicate associated data repositories before provisioning
-          duplicateDataRepo: # optional
-          # Where to duplicate data repository
-          duplicateType: # optional
-          # The host of the data repository server
-          repoHost: # optional
-          # The port of the data repository server
-          repoPort: # optional
-          # The username of the data repository server
-          repoUsername: # optional
-          # The password of the data repository server
-          repoPassword: # optional
+          
       - name: Execute Job
         # You may pin to the exact commit or the version.
         # uses: parasoft/execute-job-action@4ff52dfe0b1abb285d1e94418d9b6015bbb5f6bc
@@ -78,10 +61,6 @@ jobs:
           ctpPassword: 'admin'
           # CTP Test Execution Job Name
           ctpJob: 'StatusTest'
-          # Abort the job after timeout exceeded
-          abortOnTimeout: # optional
-          # Timeout value in minutes
-          timeoutInMinutes: # optional
           # Publish test execution results to DTP
           publishReport: # 'true'
           # DTP URL
