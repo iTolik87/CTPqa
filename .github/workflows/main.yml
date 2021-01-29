@@ -70,7 +70,7 @@ jobs:
           # DTP Password
           dtpPassword: 'demo-user'
           # DTP Project Name
-          dtpProject: 'All Projects'
+          dtpProject: 'Parabank_Master'
           # Build ID to send to DTP
           buildId: '1'
           # Session Tag to send to DTP
