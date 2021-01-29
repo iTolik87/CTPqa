@@ -92,7 +92,7 @@ jobs:
           # DTP Password
           dtpPassword: 'demo-user'
           # DTP Project Name
-          dtpProject: 'Parabank_Master'
+          dtpProject: 'Parabank-v3'
           # Build ID to send to DTP
           buildId: '1'
           # Session Tag to send to DTP
