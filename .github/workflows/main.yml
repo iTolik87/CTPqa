@@ -94,7 +94,7 @@ jobs:
           # DTP Project Name
           dtpProject: 'Parabank-v3'
           # Build ID to send to DTP
-          buildId: '1'
+          buildId: 'NotNull'
           # Session Tag to send to DTP
           sessionTag: 'GitHubTest'
           # Append the test variable set environment name to the session tag
