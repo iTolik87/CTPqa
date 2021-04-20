@@ -34,7 +34,7 @@ jobs:
         uses: parasoft/deploy-environment-action@1.0.0
         with:
           # CTP URL
-          ctpUrl: 'http://40.83.216.71/em'
+          ctpUrl: 'http://104.40.88.97/em'
           # CTP Username
           ctpUsername: 'admin'
           # CTP Password
@@ -72,13 +72,13 @@ jobs:
         uses: parasoft/execute-job-action@1.0.0
         with:
           # CTP URL
-          ctpUrl: 'http://40.83.216.71/em'
+          ctpUrl: 'http://104.40.88.97/em'
           # CTP Username
           ctpUsername: 'admin'
           # CTP Password
           ctpPassword: 'admin'
           # CTP Test Execution Job Name
-          ctpJob: 'StatusTest'
+          ctpJob: 'Regression'
           # Abort the job after timeout exceeded
           abortOnTimeout: optional
           # Timeout value in minutes
@@ -86,7 +86,7 @@ jobs:
           # Publish test execution results to DTP
           publishReport: 'true'
           # DTP URL
-          dtpUrl: 'http://34.219.97.185:8080'
+          dtpUrl: 'http://54.202.62.65:8080'
           # DTP Username
           dtpUsername: 'demo'
           # DTP Password
