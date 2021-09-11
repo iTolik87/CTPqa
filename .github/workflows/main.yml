@@ -41,4 +41,4 @@ jobs:
           # Name of the system
           system: 'ParaBank'
           # Name of the environment
-          environment: 'Golden2'
+          environment: 'Golden'
