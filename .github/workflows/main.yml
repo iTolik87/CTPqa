@@ -34,11 +34,11 @@ jobs:
         uses: parasoft/deploy-environment-action@1.0.0
         with:
           # CTP URL
-          ctpUrl: 'http://104.40.88.97/em'
+          ctpUrl: 'http://34.219.14.71/em'
           # CTP Username
-          ctpUsername: 'admin'
+          ctpUsername: 'demo'
           # CTP Password
-          ctpPassword: 'admin'
+          ctpPassword: 'demo-user'
           # Name of the system
           system: 'ParaBank'
           # Name of the environment
@@ -66,36 +66,19 @@ jobs:
           # The password of the data repository server
           repoPassword: 'admin'
           
-      - name: Execute Job
+          
+      - name: Destroy Environment
         # You may pin to the exact commit or the version.
-        # uses: parasoft/execute-job-action@4ff52dfe0b1abb285d1e94418d9b6015bbb5f6bc
-        uses: parasoft/execute-job-action@1.0.0
+        # uses: parasoft/destroy-environment-action@ea4c180723d6eb7858e41fa89c2af734ddd8c8b5
+        uses: parasoft/destroy-environment-action@1.0.0
         with:
           # CTP URL
-          ctpUrl: 'http://104.40.88.97/em'
+          ctpUrl: 'http://34.219.14.71/em'
           # CTP Username
-          ctpUsername: 'admin'
+          ctpUsername: 'demo'
           # CTP Password
-          ctpPassword: 'admin'
-          # CTP Test Execution Job Name
-          ctpJob: 'Regression'
-          # Abort the job after timeout exceeded
-          abortOnTimeout: optional
-          # Timeout value in minutes
-          timeoutInMinutes: optional
-          # Publish test execution results to DTP
-          publishReport: 'true'
-          # DTP URL
-          dtpUrl: 'http://54.202.62.65:8080'
-          # DTP Username
-          dtpUsername: 'demo'
-          # DTP Password
-          dtpPassword: 'demo-user'
-          # DTP Project Name
-          dtpProject: 'Parabank_Master'
-          # Build ID to send to DTP
-          buildId: 'RegressionCTPbuild'
-          # Session Tag to send to DTP
-          sessionTag: 'GitHubTest'
-          # Append the test variable set environment name to the session tag
-          appendEnvironment: 'Golden'
+          ctpPassword: 'demo-user'
+          # Name of the system
+          system: 'ParaBank'
+          # Name of the environment
+          environment: 'Golden2'
