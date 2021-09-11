@@ -34,7 +34,7 @@ jobs:
         uses: parasoft/deploy-environment-action@1.0.0
         with:
           # CTP URL
-          ctpUrl: 'http://34.219.14.71/em'
+          ctpUrl: 'http://34.219.14.71:8080/em'
           # CTP Username
           ctpUsername: 'demo'
           # CTP Password
@@ -73,7 +73,7 @@ jobs:
         uses: parasoft/destroy-environment-action@1.0.0
         with:
           # CTP URL
-          ctpUrl: 'http://34.219.14.71/em'
+          ctpUrl: 'http://34.219.14.71:8080/em'
           # CTP Username
           ctpUsername: 'demo'
           # CTP Password
